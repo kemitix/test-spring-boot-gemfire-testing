@@ -1,0 +1,1097 @@
+cd /home/pcampbell/NetBeansProjects/contexts; JAVA_HOME=/usr/lib/jvm/java-8-oracle /home/pcampbell/Apps/netbeans/java/maven/bin/mvn clean install
+Scanning for projects...
+
+------------------------------------------------------------------------
+Building contexts 0.0.1-SNAPSHOT
+------------------------------------------------------------------------
+
+--- maven-clean-plugin:2.5:clean (default-clean) @ contexts ---
+Deleting /home/pcampbell/NetBeansProjects/contexts/target
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ contexts ---
+Using 'UTF-8' encoding to copy filtered resources.
+Copying 1 resource
+Copying 0 resource
+
+--- maven-compiler-plugin:3.1:compile (default-compile) @ contexts ---
+Changes detected - recompiling the module!
+Compiling 1 source file to /home/pcampbell/NetBeansProjects/contexts/target/classes
+
+--- maven-resources-plugin:2.6:testResources (default-testResources) @ contexts ---
+Using 'UTF-8' encoding to copy filtered resources.
+skip non existing resourceDirectory /home/pcampbell/NetBeansProjects/contexts/src/test/resources
+
+--- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ contexts ---
+Changes detected - recompiling the module!
+Compiling 3 source files to /home/pcampbell/NetBeansProjects/contexts/target/test-classes
+
+--- maven-surefire-plugin:2.17:test (default-test) @ contexts ---
+Surefire report directory: /home/pcampbell/NetBeansProjects/contexts/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running test.ContextsApplicationWithCustomTests
+16:06:10.052 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class test.ContextsApplicationWithCustomTests]
+16:06:10.075 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+16:06:10.122 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@6eebc39e declaringClass = 'test.ContextsApplicationWithCustomTests', classes = '{class test.ContextsApplication, class test.CustomConfiguration}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+16:06:10.135 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [test.ContextsApplicationWithCustomTests]
+16:06:10.155 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@3632be31, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5abca1e0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2286778, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4e9ba398, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6d7b4f4c]
+16:06:10.158 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.ContextsApplicationWithCustomTests]
+16:06:10.158 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.ContextsApplicationWithCustomTests]
+16:06:10.159 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.ContextsApplicationWithCustomTests]
+16:06:10.160 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.ContextsApplicationWithCustomTests]
+16:06:10.164 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.ContextsApplicationWithCustomTests]
+16:06:10.165 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.ContextsApplicationWithCustomTests]
+16:06:10.173 [main] DEBUG o.s.test.util.ReflectionTestUtils - Getting field [mergedContextConfiguration] from target [[DefaultTestContext@2b9627bc testClass = ContextsApplicationWithCustomTests, testInstance = test.ContextsApplicationWithCustomTests@65e2dbf3, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4f970963 testClass = ContextsApplicationWithCustomTests, locations = '{}', classes = '{class test.ContextsApplication, class test.CustomConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]]
+16:06:10.178 [main] DEBUG o.s.test.util.ReflectionTestUtils - Setting field [propertySourceProperties] of type [null] on target [[MergedContextConfiguration@4f970963 testClass = ContextsApplicationWithCustomTests, locations = '{}', classes = '{class test.ContextsApplication, class test.CustomConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] to value [[Ljava.lang.String;@7fac631b]
+16:06:10.179 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@2b9627bc testClass = ContextsApplicationWithCustomTests, testInstance = test.ContextsApplicationWithCustomTests@65e2dbf3, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@4f970963 testClass = ContextsApplicationWithCustomTests, locations = '{}', classes = '{class test.ContextsApplication, class test.CustomConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.IntegrationTest=true}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+16:06:10.338 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:06:10.343 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:06:10.344 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:06:10.345 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.7.RELEASE)
+
+2015-10-20 16:06:10.647  INFO 21217 --- [           main] test.ContextsApplicationWithCustomTests  : Starting ContextsApplicationWithCustomTests on hyperion with PID 21217 (/home/pcampbell/NetBeansProjects/contexts/target/test-classes started by pcampbell in /home/pcampbell/NetBeansProjects/contexts)
+2015-10-20 16:06:10.690  INFO 21217 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@124c278f: startup date [Tue Oct 20 16:06:10 BST 2015]; root of context hierarchy
+2015-10-20 16:06:11.195  INFO 21217 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'foo': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=contextsApplication; factoryMethodName=foo; initMethodName=null; destroyMethodName=(inferred); defined in test.ContextsApplication] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=customConfiguration; factoryMethodName=foo; initMethodName=null; destroyMethodName=(inferred); defined in test.CustomConfiguration]
+
+[info 2015/10/20 16:06:12.107 BST  <main> tid=0x1]
+  ---------------------------------------------------------------------------
+
+    Copyright (C) 1997-2014 Pivotal Software, Inc. All rights reserved. This
+    product is protected by U.S. and international copyright and intellectual
+    property laws. Pivotal products are covered by one or more patents listed
+    at http://www.gopivotal.com/patents.  Pivotal is a registered trademark
+    of trademark of GoPivotal, Inc. in the United States and/or other
+    jurisdictions.  All other marks and names mentioned herein may be
+    trademarks of their respective companies.
+
+  ---------------------------------------------------------------------------
+  Java version:   7.0.2 build 45714 01/28/2014 19:47:06 PST javac 1.6.0_26
+  Native version: native code unavailable
+  Source revision: 45714
+  Source repository: gemfire/branches/gemfire702X_maint
+  Running on: /10.20.84.148, 2 cpu(s), amd64 Linux 3.13.0-65-generic
+  Process ID: 21217
+  User: pcampbell
+  Current dir: /home/pcampbell/NetBeansProjects/contexts
+  Home dir: /home/pcampbell
+  Class Path:
+    /home/pcampbell/NetBeansProjects/contexts/target/test-classes
+    /home/pcampbell/NetBeansProjects/contexts/target/classes
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.7.RELEASE/spring-boot-starter-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot/1.2.7.RELEASE/spring-boot-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.7.RELEASE/spring-boot-starter-logging-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar
+    /home/pcampbell/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar
+    /home/pcampbell/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar
+    /home/pcampbell/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar
+    /home/pcampbell/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-core/4.1.8.RELEASE/spring-core-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-data-gemfire/1.2.7.RELEASE/spring-boot-starter-data-gemfire-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/com/gemstone/gemfire/gemfire/7.0.2/gemfire-7.0.2.jar
+    /home/pcampbell/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-context/4.1.8.RELEASE/spring-context-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-aop/4.1.8.RELEASE/spring-aop-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-expression/4.1.8.RELEASE/spring-expression-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-context-support/4.1.8.RELEASE/spring-context-support-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-tx/4.1.8.RELEASE/spring-tx-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/data/spring-data-gemfire/1.5.4.RELEASE/spring-data-gemfire-1.5.4.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar
+    /home/pcampbell/.m2/repository/org/springframework/data/spring-data-commons/1.9.4.RELEASE/spring-data-commons-1.9.4.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar
+    /home/pcampbell/.m2/repository/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar
+    /home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.7.RELEASE/spring-boot-starter-test-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/junit/junit/4.12/junit-4.12.jar
+    /home/pcampbell/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar
+    /home/pcampbell/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+    /home/pcampbell/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+    /home/pcampbell/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-test/4.1.8.RELEASE/spring-test-4.1.8.RELEASE.jar
+  Library Path:
+    /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+    /usr/lib/jvm/java-8-oracle/jre/lib/i386
+    /usr/java/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+  System Properties:
+      PID = 21217
+      awt.toolkit = sun.awt.X11.XToolkit
+      basedir = /home/pcampbell/NetBeansProjects/contexts
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.print.PSPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+      java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+      java.home = /usr/lib/jvm/java-8-oracle/jre
+      java.io.tmpdir = /tmp
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_60-b27
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_60
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.60-b23
+      line.separator =
+
+      localRepository = /home/pcampbell/.m2/repository
+      maven.ext.class.path = /home/pcampbell/Apps/netbeans/java/maven-nblib/netbeans-eventspy.jar
+      org.jboss.logging.provider = slf4j
+      os.version = 3.13.0-65-generic
+      p2p.useSSL = false
+      path.separator = :
+      sun.arch.data.model = 64
+      sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+      sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+      sun.cpu.endian = little
+      sun.cpu.isalist =
+      sun.desktop = gnome
+      sun.io.unicode.encoding = UnicodeLittle
+      sun.java.command = /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefirebooter4513197573128363814.jar /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefire2956438043213264599tmp /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefire_05146885501472252303tmp
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.nio.ch.bugLevel =
+      sun.os.patch.level = unknown
+      surefire.real.class.path = /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefirebooter4513197573128363814.jar
+      surefire.test.class.path = /home/pcampbell/NetBeansProjects/contexts/target/test-classes:/home/pcampbell/NetBeansProjects/contexts/target/classes:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.7.RELEASE/spring-boot-starter-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot/1.2.7.RELEASE/spring-boot-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.7.RELEASE/spring-boot-starter-logging-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar:/home/pcampbell/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar:/home/pcampbell/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar:/home/pcampbell/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/home/pcampbell/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar:/home/pcampbell/.m2/repository/org/springframework/spring-core/4.1.8.RELEASE/spring-core-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-data-gemfire/1.2.7.RELEASE/spring-boot-starter-data-gemfire-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/com/gemstone/gemfire/gemfire/7.0.2/gemfire-7.0.2.jar:/home/pcampbell/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/pcampbell/.m2/repository/org/springframework/spring-context/4.1.8.RELEASE/spring-context-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-aop/4.1.8.RELEASE/spring-aop-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/pcampbell/.m2/repository/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-expression/4.1.8.RELEASE/spring-expression-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-context-support/4.1.8.RELEASE/spring-context-support-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-tx/4.1.8.RELEASE/spring-tx-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/data/spring-data-gemfire/1.5.4.RELEASE/spring-data-gemfire-1.5.4.RELEASE.jar:/home/pcampbell/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/home/pcampbell/.m2/repository/org/springframework/data/spring-data-commons/1.9.4.RELEASE/spring-data-commons-1.9.4.RELEASE.jar:/home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar:/home/pcampbell/.m2/repository/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar:/home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.7.RELEASE/spring-boot-starter-test-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/pcampbell/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/home/pcampbell/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/home/pcampbell/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/pcampbell/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/home/pcampbell/.m2/repository/org/springframework/spring-test/4.1.8.RELEASE/spring-test-4.1.8.RELEASE.jar:
+      user.country = GB
+      user.language = en
+      user.timezone = Europe/London
+  ---------------------------------------------------------------------------
+
+
+[config 2015/10/20 16:06:12.118 BST  <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cache-xml-file=cache.xml
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-network-partition-detection=false
+  enable-time-statistics=false
+  enforce-unique-host=false
+  groups=
+  jmx-manager=false
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=8080
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  locators=
+  log-disk-space-limit=0
+  log-file=
+  log-file-size-limit=0
+  log-level=config
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=10000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-port=10334
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-port=0
+  memcached-protocol=ASCII
+  name=
+  redundancy-zone=
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  writable-working-dir=
+
+
+[info 2015/10/20 16:06:12.120 BST  <main> tid=0x1] Defaulting license-working-dir to current working directory "/home/pcampbell/NetBeansProjects/contexts".
+
+[info 2015/10/20 16:06:12.123 BST  <main> tid=0x1] Acquiring default evaluation license.
+
+[info 2015/10/20 16:06:13.338 BST  <main> tid=0x1] vFabric Licensing Client activation of license required 1215 milliseconds.
+
+[info 2015/10/20 16:06:13.378 BST  <main> tid=0x1] Using the default evaluation license.
+
+[info 2015/10/20 16:06:13.379 BST  <main> tid=0x1] Licensing required 1260 milliseconds.
+
+[info 2015/10/20 16:06:13.621 BST  <main> tid=0x1] GemFire P2P Listener started on  tcp:///10.20.84.148:60590
+
+[info 2015/10/20 16:06:13.940 BST  <main> tid=0x1] requested unicast receive buffer size of 1,048,576 but got 212,992: This is an operating system limit. If you would like to change it, please see your system administrator.
+
+[info 2015/10/20 16:06:13.941 BST  <main> tid=0x1] requested multicast receive buffer size of 1,048,576 but got 212,992: This is an operating system limit. If you would like to change it, please see your system administrator.
+
+[info 2015/10/20 16:06:13.949 BST  <main> tid=0x1] requested multicast receive buffer size of 1,048,576 but got 212,992: This is an operating system limit. If you would like to change it, please see your system administrator.
+
+[info 2015/10/20 16:06:18.069 BST  <main> tid=0x1] Membership: lead member is now 10.20.84.148(21217):13273
+
+[config 2015/10/20 16:06:18.073 BST  <main> tid=0x1] This member, 10.20.84.148(21217):13273, is becoming group coordinator.
+
+[info 2015/10/20 16:06:18.083 BST  <main> tid=0x1] Entered into membership in group GF70 with ID 10.20.84.148(21217):13273.
+
+[info 2015/10/20 16:06:18.084 BST  <main> tid=0x1] Starting DistributionManager 10.20.84.148(21217):13273.
+
+[info 2015/10/20 16:06:18.092 BST  <main> tid=0x1] Initial (membershipManager) view =  [10.20.84.148(21217):13273{lead}]
+
+[info 2015/10/20 16:06:18.093 BST  <main> tid=0x1] Admitting member <10.20.84.148(21217):13273>. Now there are 1 non-admin member(s).
+
+[info 2015/10/20 16:06:18.094 BST  <main> tid=0x1] 10.20.84.148(21217):13273 is the elder and the only member.
+
+[info 2015/10/20 16:06:18.100 BST  <main> tid=0x1] Did not hear back from any other system. I am the first one.
+
+[info 2015/10/20 16:06:18.101 BST  <main> tid=0x1] DistributionManager 10.20.84.148(21217):13273 started on 239.192.81.1[10334]. There were 0 other DMs. others: []
+
+[info 2015/10/20 16:06:18.141 BST  <Thread-4 StatSampler> tid=0x21] Disabling statistic archival.
+
+[info 2015/10/20 16:06:18.535 BST  <main> tid=0x1] Initializing region _monitoringRegion_10.20.84.148<v0>13273
+
+[config 2015/10/20 16:06:18.559 BST  <main> tid=0x1] Command Service could not be initialized. Could not find Spring Shell library which is needed for CLI/gfsh in classpath. Internal support for CLI & gfsh is not enabled. Note: For convenience, absolute path of "gfsh-dependencies.jar" from "lib" directory of GemFire product distribution can be included in CLASSPATH of an application.
+
+[info 2015/10/20 16:06:18.639 BST  <main> tid=0x1] Initializing region PdxTypes
+2015-10-20 16:06:18.646  INFO 21217 --- [           main] o.s.data.gemfire.CacheFactoryBean        : Connected to Distributed System [] as Member [10.20.84.148(21217):13273]in Group(s) [[]] with Role(s) [[]] on Host [10.20.84.148] having PID [21217].
+2015-10-20 16:06:18.647  INFO 21217 --- [           main] o.s.data.gemfire.CacheFactoryBean        : Created new GemFire v.7.0.2 Cache [].
+2015-10-20 16:06:18.703  INFO 21217 --- [           main] test.ContextsApplication$1               : Created new Cache Region [default].
+2015-10-20 16:06:18.872  INFO 21217 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2015-10-20 16:06:18.878  INFO 21217 --- [           main] test.ContextsApplicationWithCustomTests  : Started ContextsApplicationWithCustomTests in 8.525 seconds (JVM running for 9.465)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.257 sec - in test.ContextsApplicationWithCustomTests
+Running test.ContextsApplicationTests
+2015-10-20 16:06:18.898  INFO 21217 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@e041f0c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a175569, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11963225, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f3c966c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@11ee02f8]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.7.RELEASE)
+
+2015-10-20 16:06:18.936  INFO 21217 --- [           main] test.ContextsApplicationTests            : Starting ContextsApplicationTests on hyperion with PID 21217 (/home/pcampbell/NetBeansProjects/contexts/target/test-classes started by pcampbell in /home/pcampbell/NetBeansProjects/contexts)
+2015-10-20 16:06:18.938  INFO 21217 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2fb68ec6: startup date [Tue Oct 20 16:06:18 BST 2015]; root of context hierarchy
+2015-10-20 16:06:19.089  INFO 21217 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'foo': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=customConfiguration; factoryMethodName=foo; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [test/CustomConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=contextsApplication; factoryMethodName=foo; initMethodName=null; destroyMethodName=(inferred); defined in test.ContextsApplication]
+2015-10-20 16:06:19.267  WARN 21217 --- [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRegionFactoryBean' defined in test.ContextsApplication: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.gemstone.gemfire.cache.Cache]: : Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:464)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1117)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:689)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:103)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:175)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:314)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 42 common frames omitted
+Caused by: java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.data.gemfire.GemfireBeanFactoryLocator.afterPropertiesSet(GemfireBeanFactoryLocator.java:117)
+	at org.springframework.data.gemfire.CacheFactoryBean.init(CacheFactoryBean.java:270)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:551)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:85)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:168)
+	... 51 common frames omitted
+
+
+[info 2015/10/20 16:06:19.329 BST  <main> tid=0x1] GemFireCache[id = 22446425; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Tue Oct 20 16:06:18 BST 2015; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2015/10/20 16:06:19.377 BST  <main> tid=0x1] Resetting original MemoryPoolMXBean heap threshold bytes 0 on pool PS Old Gen
+
+[info 2015/10/20 16:06:19.425 BST  <main> tid=0x1] Shutting down DistributionManager 10.20.84.148(21217):13273.
+
+[info 2015/10/20 16:06:19.536 BST  <main> tid=0x1] Now closing distribution for 10.20.84.148(21217):13273
+
+[config 2015/10/20 16:06:19.538 BST  <main> tid=0x1] Membership: sending new view [[10.20.84.148(21217)<v0>:13273|1] []] (0 mbrs)
+
+
+[info 2015/10/20 16:06:19.549 BST  <main> tid=0x1] DistributionManager stopped in 123ms.
+
+[info 2015/10/20 16:06:19.549 BST  <main> tid=0x1] Marking DistributionManager 10.20.84.148(21217):13273 as closed.
+2015-10-20 16:06:19.599  INFO 21217 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/home/pcampbell/NetBeansProjects/contexts/target/surefire/surefirebooter4513197573128363814.jar]
+2015-10-20 16:06:19.615  INFO 21217 --- [           main] utoConfigurationReportLoggingInitializer :
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2015-10-20 16:06:19.622 ERROR 21217 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRegionFactoryBean' defined in test.ContextsApplication: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.gemstone.gemfire.cache.Cache]: : Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:464)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1117)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:689)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:103)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:175)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:314)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 42 common frames omitted
+Caused by: java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.data.gemfire.GemfireBeanFactoryLocator.afterPropertiesSet(GemfireBeanFactoryLocator.java:117)
+	at org.springframework.data.gemfire.CacheFactoryBean.init(CacheFactoryBean.java:270)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:551)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:85)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:168)
+	... 51 common frames omitted
+
+2015-10-20 16:06:19.628 ERROR 21217 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a175569] to prepare test instance [test.ContextsApplicationTests@61a5b4ae]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRegionFactoryBean' defined in test.ContextsApplication: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.gemstone.gemfire.cache.Cache]: : Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:464)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1117)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:689)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:103)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:175)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:314)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 42 common frames omitted
+Caused by: java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.data.gemfire.GemfireBeanFactoryLocator.afterPropertiesSet(GemfireBeanFactoryLocator.java:117)
+	at org.springframework.data.gemfire.CacheFactoryBean.init(CacheFactoryBean.java:270)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:551)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:85)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:168)
+	... 51 common frames omitted
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.7.RELEASE)
+
+2015-10-20 16:06:19.698  INFO 21217 --- [           main] test.ContextsApplicationTests            : Starting ContextsApplicationTests on hyperion with PID 21217 (/home/pcampbell/NetBeansProjects/contexts/target/test-classes started by pcampbell in /home/pcampbell/NetBeansProjects/contexts)
+2015-10-20 16:06:19.705  INFO 21217 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f8f8a80: startup date [Tue Oct 20 16:06:19 BST 2015]; root of context hierarchy
+2015-10-20 16:06:20.063  INFO 21217 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'foo': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=customConfiguration; factoryMethodName=foo; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [test/CustomConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=contextsApplication; factoryMethodName=foo; initMethodName=null; destroyMethodName=(inferred); defined in test.ContextsApplication]
+
+[info 2015/10/20 16:06:20.112 BST  <main> tid=0x1]
+  ---------------------------------------------------------------------------
+
+    Copyright (C) 1997-2014 Pivotal Software, Inc. All rights reserved. This
+    product is protected by U.S. and international copyright and intellectual
+    property laws. Pivotal products are covered by one or more patents listed
+    at http://www.gopivotal.com/patents.  Pivotal is a registered trademark
+    of trademark of GoPivotal, Inc. in the United States and/or other
+    jurisdictions.  All other marks and names mentioned herein may be
+    trademarks of their respective companies.
+
+  ---------------------------------------------------------------------------
+  Java version:   7.0.2 build 45714 01/28/2014 19:47:06 PST javac 1.6.0_26
+  Native version: native code unavailable
+  Source revision: 45714
+  Source repository: gemfire/branches/gemfire702X_maint
+  Running on: 10.20.84.148/10.20.84.148, 2 cpu(s), amd64 Linux 3.13.0-65-generic
+  Process ID: 21217
+  User: pcampbell
+  Current dir: /home/pcampbell/NetBeansProjects/contexts
+  Home dir: /home/pcampbell
+  Class Path:
+    /home/pcampbell/NetBeansProjects/contexts/target/test-classes
+    /home/pcampbell/NetBeansProjects/contexts/target/classes
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.7.RELEASE/spring-boot-starter-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot/1.2.7.RELEASE/spring-boot-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.7.RELEASE/spring-boot-starter-logging-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar
+    /home/pcampbell/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar
+    /home/pcampbell/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar
+    /home/pcampbell/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar
+    /home/pcampbell/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-core/4.1.8.RELEASE/spring-core-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-data-gemfire/1.2.7.RELEASE/spring-boot-starter-data-gemfire-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/com/gemstone/gemfire/gemfire/7.0.2/gemfire-7.0.2.jar
+    /home/pcampbell/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-context/4.1.8.RELEASE/spring-context-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-aop/4.1.8.RELEASE/spring-aop-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-expression/4.1.8.RELEASE/spring-expression-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-context-support/4.1.8.RELEASE/spring-context-support-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-tx/4.1.8.RELEASE/spring-tx-4.1.8.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/springframework/data/spring-data-gemfire/1.5.4.RELEASE/spring-data-gemfire-1.5.4.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar
+    /home/pcampbell/.m2/repository/org/springframework/data/spring-data-commons/1.9.4.RELEASE/spring-data-commons-1.9.4.RELEASE.jar
+    /home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar
+    /home/pcampbell/.m2/repository/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar
+    /home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar
+    /home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.7.RELEASE/spring-boot-starter-test-1.2.7.RELEASE.jar
+    /home/pcampbell/.m2/repository/junit/junit/4.12/junit-4.12.jar
+    /home/pcampbell/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar
+    /home/pcampbell/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+    /home/pcampbell/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+    /home/pcampbell/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+    /home/pcampbell/.m2/repository/org/springframework/spring-test/4.1.8.RELEASE/spring-test-4.1.8.RELEASE.jar
+  Library Path:
+    /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+    /usr/lib/jvm/java-8-oracle/jre/lib/i386
+    /usr/java/packages/lib/amd64
+    /usr/lib64
+    /lib64
+    /lib
+    /usr/lib
+  System Properties:
+      PID = 21217
+      awt.toolkit = sun.awt.X11.XToolkit
+      basedir = /home/pcampbell/NetBeansProjects/contexts
+      file.encoding = UTF-8
+      file.encoding.pkg = sun.io
+      file.separator = /
+      java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+      java.awt.headless = true
+      java.awt.printerjob = sun.print.PSPrinterJob
+      java.class.version = 52.0
+      java.endorsed.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/endorsed
+      java.ext.dirs = /usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext
+      java.home = /usr/lib/jvm/java-8-oracle/jre
+      java.io.tmpdir = /tmp
+      java.runtime.name = Java(TM) SE Runtime Environment
+      java.runtime.version = 1.8.0_60-b27
+      java.specification.name = Java Platform API Specification
+      java.specification.vendor = Oracle Corporation
+      java.specification.version = 1.8
+      java.vendor = Oracle Corporation
+      java.vendor.url = http://java.oracle.com/
+      java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+      java.version = 1.8.0_60
+      java.vm.info = mixed mode
+      java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+      java.vm.specification.name = Java Virtual Machine Specification
+      java.vm.specification.vendor = Oracle Corporation
+      java.vm.specification.version = 1.8
+      java.vm.vendor = Oracle Corporation
+      java.vm.version = 25.60-b23
+      line.separator =
+
+      localRepository = /home/pcampbell/.m2/repository
+      maven.ext.class.path = /home/pcampbell/Apps/netbeans/java/maven-nblib/netbeans-eventspy.jar
+      org.jboss.logging.provider = slf4j
+      os.version = 3.13.0-65-generic
+      p2p.idleConnectionTimeout = 60000
+      p2p.shareSockets = true
+      p2p.useSSL = false
+      path.separator = :
+      sun.arch.data.model = 64
+      sun.boot.class.path = /usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes
+      sun.boot.library.path = /usr/lib/jvm/java-8-oracle/jre/lib/amd64
+      sun.cpu.endian = little
+      sun.cpu.isalist =
+      sun.desktop = gnome
+      sun.io.unicode.encoding = UnicodeLittle
+      sun.java.command = /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefirebooter4513197573128363814.jar /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefire2956438043213264599tmp /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefire_05146885501472252303tmp
+      sun.java.launcher = SUN_STANDARD
+      sun.jnu.encoding = UTF-8
+      sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+      sun.nio.ch.bugLevel =
+      sun.os.patch.level = unknown
+      surefire.real.class.path = /home/pcampbell/NetBeansProjects/contexts/target/surefire/surefirebooter4513197573128363814.jar
+      surefire.test.class.path = /home/pcampbell/NetBeansProjects/contexts/target/test-classes:/home/pcampbell/NetBeansProjects/contexts/target/classes:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter/1.2.7.RELEASE/spring-boot-starter-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot/1.2.7.RELEASE/spring-boot-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.2.7.RELEASE/spring-boot-autoconfigure-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-logging/1.2.7.RELEASE/spring-boot-starter-logging-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.12/jcl-over-slf4j-1.7.12.jar:/home/pcampbell/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar:/home/pcampbell/.m2/repository/org/slf4j/log4j-over-slf4j/1.7.12/log4j-over-slf4j-1.7.12.jar:/home/pcampbell/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar:/home/pcampbell/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar:/home/pcampbell/.m2/repository/org/springframework/spring-core/4.1.8.RELEASE/spring-core-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-data-gemfire/1.2.7.RELEASE/spring-boot-starter-data-gemfire-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/com/gemstone/gemfire/gemfire/7.0.2/gemfire-7.0.2.jar:/home/pcampbell/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/pcampbell/.m2/repository/org/springframework/spring-context/4.1.8.RELEASE/spring-context-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-aop/4.1.8.RELEASE/spring-aop-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/pcampbell/.m2/repository/org/springframework/spring-beans/4.1.8.RELEASE/spring-beans-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-expression/4.1.8.RELEASE/spring-expression-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-context-support/4.1.8.RELEASE/spring-context-support-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/spring-tx/4.1.8.RELEASE/spring-tx-4.1.8.RELEASE.jar:/home/pcampbell/.m2/repository/org/springframework/data/spring-data-gemfire/1.5.4.RELEASE/spring-data-gemfire-1.5.4.RELEASE.jar:/home/pcampbell/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/home/pcampbell/.m2/repository/org/springframework/data/spring-data-commons/1.9.4.RELEASE/spring-data-commons-1.9.4.RELEASE.jar:/home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar:/home/pcampbell/.m2/repository/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar:/home/pcampbell/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar:/home/pcampbell/.m2/repository/org/springframework/boot/spring-boot-starter-test/1.2.7.RELEASE/spring-boot-starter-test-1.2.7.RELEASE.jar:/home/pcampbell/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/pcampbell/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/home/pcampbell/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/home/pcampbell/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/pcampbell/.m2/repository/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar:/home/pcampbell/.m2/repository/org/springframework/spring-test/4.1.8.RELEASE/spring-test-4.1.8.RELEASE.jar:
+      user.country = GB
+      user.language = en
+      user.timezone = Europe/London
+  ---------------------------------------------------------------------------
+
+
+[config 2015/10/20 16:06:20.119 BST  <main> tid=0x1] Startup Configuration:
+   ### GemFire Properties using default values ###
+  ack-severe-alert-threshold=0
+  ack-wait-threshold=15
+  archive-disk-space-limit=0
+  archive-file-size-limit=0
+  async-distribution-timeout=0
+  async-max-queue-size=8
+  async-queue-timeout=60000
+  bind-address=
+  cache-xml-file=cache.xml
+  conflate-events=server
+  conserve-sockets=true
+  delta-propagation=true
+  deploy-working-dir=.
+  disable-tcp=false
+  distributed-system-id=-1
+  durable-client-id=
+  durable-client-timeout=300
+  enable-network-partition-detection=false
+  enable-time-statistics=false
+  enforce-unique-host=false
+  groups=
+  jmx-manager=false
+  jmx-manager-access-file=
+  jmx-manager-bind-address=
+  jmx-manager-hostname-for-clients=
+  jmx-manager-http-port=8080
+  jmx-manager-password-file=
+  jmx-manager-port=1099
+  jmx-manager-ssl=false
+  jmx-manager-start=false
+  jmx-manager-update-rate=2000
+  license-application-cache=
+  license-data-management=
+  license-server-timeout=10000
+  license-working-dir=
+  locators=
+  log-disk-space-limit=0
+  log-file=
+  log-file-size-limit=0
+  log-level=config
+  max-num-reconnect-tries=3
+  max-wait-time-reconnect=10000
+  mcast-address=239.192.81.1
+  mcast-flow-control=1048576, 0.25, 5000
+  mcast-port=10334
+  mcast-recv-buffer-size=1048576
+  mcast-send-buffer-size=65535
+  mcast-ttl=32
+  member-timeout=5000
+  membership-port-range=1024-65535
+  memcached-port=0
+  memcached-protocol=ASCII
+  name=
+  redundancy-zone=
+  remote-locators=
+  remove-unresponsive-client=false
+  roles=
+  security-=
+  security-client-accessor=
+  security-client-accessor-pp=
+  security-client-auth-init=
+  security-client-authenticator=
+  security-client-dhalgo=
+  security-log-file=
+  security-log-level=config
+  security-peer-auth-init=
+  security-peer-authenticator=
+  security-peer-verifymember-timeout=1000
+  server-bind-address=
+  socket-buffer-size=32768
+  socket-lease-time=60000
+  ssl-ciphers=any
+  ssl-enabled=false
+  ssl-protocols=any
+  ssl-require-authentication=true
+  start-locator=
+  statistic-archive-file=
+  statistic-sample-rate=1000
+  statistic-sampling-enabled=true
+  tcp-port=0
+  udp-fragment-size=60000
+  udp-recv-buffer-size=1048576
+  udp-send-buffer-size=65535
+  writable-working-dir=
+
+
+[info 2015/10/20 16:06:20.120 BST  <main> tid=0x1] Defaulting license-working-dir to current working directory "/home/pcampbell/NetBeansProjects/contexts".
+
+[info 2015/10/20 16:06:20.121 BST  <main> tid=0x1] Acquiring default evaluation license.
+
+[info 2015/10/20 16:06:20.273 BST  <main> tid=0x1] vFabric Licensing Client activation of license required 152 milliseconds.
+
+[info 2015/10/20 16:06:20.313 BST  <main> tid=0x1] Using the default evaluation license.
+
+[info 2015/10/20 16:06:20.313 BST  <main> tid=0x1] Licensing required 193 milliseconds.
+
+[info 2015/10/20 16:06:20.316 BST  <main> tid=0x1] GemFire P2P Listener started on  tcp:///10.20.84.148:60952
+
+[info 2015/10/20 16:06:20.328 BST  <main> tid=0x1] requested unicast receive buffer size of 1,048,576 but got 212,992: This is an operating system limit. If you would like to change it, please see your system administrator.
+
+[info 2015/10/20 16:06:20.329 BST  <main> tid=0x1] requested multicast receive buffer size of 1,048,576 but got 212,992: This is an operating system limit. If you would like to change it, please see your system administrator.
+
+[info 2015/10/20 16:06:20.329 BST  <main> tid=0x1] requested multicast receive buffer size of 1,048,576 but got 212,992: This is an operating system limit. If you would like to change it, please see your system administrator.
+
+[info 2015/10/20 16:06:24.338 BST  <main> tid=0x1] Membership: lead member is now 10.20.84.148(21217):39721
+
+[config 2015/10/20 16:06:24.339 BST  <main> tid=0x1] This member, 10.20.84.148(21217):39721, is becoming group coordinator.
+
+[info 2015/10/20 16:06:24.339 BST  <main> tid=0x1] Entered into membership in group GF70 with ID 10.20.84.148(21217):39721.
+
+[info 2015/10/20 16:06:24.339 BST  <main> tid=0x1] Starting DistributionManager 10.20.84.148(21217):39721.
+
+[info 2015/10/20 16:06:24.341 BST  <main> tid=0x1] Initial (membershipManager) view =  [10.20.84.148(21217):39721{lead}]
+
+[info 2015/10/20 16:06:24.342 BST  <main> tid=0x1] Admitting member <10.20.84.148(21217):39721>. Now there are 1 non-admin member(s).
+
+[info 2015/10/20 16:06:24.342 BST  <main> tid=0x1] 10.20.84.148(21217):39721 is the elder and the only member.
+
+[info 2015/10/20 16:06:24.344 BST  <main> tid=0x1] Did not hear back from any other system. I am the first one.
+
+[info 2015/10/20 16:06:24.344 BST  <main> tid=0x1] DistributionManager 10.20.84.148(21217):39721 started on 239.192.81.1[10334]. There were 0 other DMs. others: []
+
+[info 2015/10/20 16:06:24.353 BST  <Thread-14 StatSampler> tid=0x42] Disabling statistic archival.
+
+[info 2015/10/20 16:06:24.363 BST  <main> tid=0x1] Initializing region _monitoringRegion_10.20.84.148<v0>39721
+
+[config 2015/10/20 16:06:24.369 BST  <main> tid=0x1] Command Service could not be initialized. Could not find Spring Shell library which is needed for CLI/gfsh in classpath. Internal support for CLI & gfsh is not enabled. Note: For convenience, absolute path of "gfsh-dependencies.jar" from "lib" directory of GemFire product distribution can be included in CLASSPATH of an application.
+
+[info 2015/10/20 16:06:24.372 BST  <main> tid=0x1] Initializing region PdxTypes
+2015-10-20 16:06:24.374  INFO 21217 --- [           main] o.s.data.gemfire.CacheFactoryBean        : Connected to Distributed System [] as Member [10.20.84.148(21217):39721]in Group(s) [[]] with Role(s) [[]] on Host [10.20.84.148] having PID [21217].
+2015-10-20 16:06:24.374  INFO 21217 --- [           main] o.s.data.gemfire.CacheFactoryBean        : Created new GemFire v.7.0.2 Cache [].
+2015-10-20 16:06:24.391  INFO 21217 --- [           main] test.ContextsApplication$1               : Created new Cache Region [default].
+2015-10-20 16:06:24.403  INFO 21217 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2015-10-20 16:06:24.406  INFO 21217 --- [           main] test.ContextsApplicationTests            : Started ContextsApplicationTests in 4.741 seconds (JVM running for 14.993)
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.461 sec <<< FAILURE! - in test.ContextsApplicationTests
+shouldBeFoo(test.ContextsApplicationTests)  Time elapsed: 0.015 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:94)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultRegionFactoryBean' defined in test.ContextsApplication: Unsatisfied dependency expressed through constructor argument with index 0 of type [com.gemstone.gemfire.cache.Cache]: : Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:464)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1117)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:689)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:103)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cacheFactoryBean': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:175)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:314)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:464)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1117)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:689)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:103)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalArgumentException: a beanFactoryReference already exists for key cacheFactoryBean
+	at org.springframework.data.gemfire.GemfireBeanFactoryLocator.afterPropertiesSet(GemfireBeanFactoryLocator.java:117)
+	at org.springframework.data.gemfire.CacheFactoryBean.init(CacheFactoryBean.java:270)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:551)
+	at org.springframework.data.gemfire.CacheFactoryBean.getObject(CacheFactoryBean.java:85)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:168)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:103)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:314)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1120)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1044)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:813)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:464)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1117)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:504)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:736)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:689)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:103)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:68)
+	at org.springframework.test.context.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:86)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:72)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+
+[info 2015/10/20 16:06:24.418 BST  <Distributed system shutdown hook> tid=0xa] VM is exiting - shutting down distributed system
+2015-10-20 16:06:24.417  INFO 21217 --- [      Thread-11] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f8f8a80: startup date [Tue Oct 20 16:06:19 BST 2015]; root of context hierarchy
+2015-10-20 16:06:24.423  INFO 21217 --- [       Thread-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@124c278f: startup date [Tue Oct 20 16:06:10 BST 2015]; root of context hierarchy
+2015-10-20 16:06:24.424  INFO 21217 --- [      Thread-11] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2015-10-20 16:06:24.441  INFO 21217 --- [       Thread-1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+
+[warning 2015/10/20 16:06:24.446 BST  <Thread-11> tid=0x2e]
+com.gemstone.gemfire.cache.RegionDestroyedException: com.gemstone.gemfire.internal.cache.DistributedRegion[path='/_monitoringRegion_10.20.84.148<v0>39721';scope=DISTRIBUTED_NO_ACK';dataPolicy=REPLICATE]
+	at com.gemstone.gemfire.internal.cache.LocalRegion.checkRegionDestroyed(LocalRegion.java:7467)
+	at com.gemstone.gemfire.internal.cache.LocalRegion.checkReadiness(LocalRegion.java:2734)
+	at com.gemstone.gemfire.internal.cache.LocalRegion.get(LocalRegion.java:1469)
+	at com.gemstone.gemfire.internal.cache.LocalRegion.get(LocalRegion.java:1453)
+	at com.gemstone.gemfire.internal.cache.AbstractRegion.get(AbstractRegion.java:280)
+	at com.gemstone.gemfire.management.internal.LocalManager.unMarkForFederation(LocalManager.java:241)
+	at com.gemstone.gemfire.management.internal.SystemManagementService.unregisterMBean(SystemManagementService.java:403)
+	at com.gemstone.gemfire.management.internal.beans.ManagementAdapter.handleRegionRemoval(ManagementAdapter.java:909)
+	at com.gemstone.gemfire.management.internal.beans.ManagementListener.handleEvent(ManagementListener.java:123)
+	at com.gemstone.gemfire.distributed.internal.InternalDistributedSystem.notifyResourceEventListeners(InternalDistributedSystem.java:2091)
+	at com.gemstone.gemfire.distributed.internal.InternalDistributedSystem.handleResourceEvent(InternalDistributedSystem.java:425)
+	at com.gemstone.gemfire.internal.cache.LocalRegion.basicDestroyRegion(LocalRegion.java:6275)
+	at com.gemstone.gemfire.internal.cache.LocalRegion.close(LocalRegion.java:2294)
+	at org.springframework.data.gemfire.RegionFactoryBean.destroy(RegionFactoryBean.java:528)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:578)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:554)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:900)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:912)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:888)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:807)
+
+[info 2015/10/20 16:06:24.447 BST  <Distributed system shutdown hook> tid=0xa] GemFireCache[id = 1536478396; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Tue Oct 20 16:06:24 BST 2015; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+
+[info 2015/10/20 16:06:24.447 BST  <Distributed system shutdown hook> tid=0xa] Resetting original MemoryPoolMXBean heap threshold bytes 0 on pool PS Old Gen
+
+[info 2015/10/20 16:06:24.453 BST  <Distributed system shutdown hook> tid=0xa] Shutting down DistributionManager 10.20.84.148(21217):39721.
+
+[info 2015/10/20 16:06:24.574 BST  <Distributed system shutdown hook> tid=0xa] Now closing distribution for 10.20.84.148(21217):39721
+
+[config 2015/10/20 16:06:24.577 BST  <Distributed system shutdown hook> tid=0xa] Membership: sending new view [[10.20.84.148(21217)<v0>:39721|1] []] (0 mbrs)
+
+
+[info 2015/10/20 16:06:24.592 BST  <Distributed system shutdown hook> tid=0xa] DistributionManager stopped in 138ms.
+
+[info 2015/10/20 16:06:24.592 BST  <Distributed system shutdown hook> tid=0xa] Marking DistributionManager 10.20.84.148(21217):39721 as closed.
+
+Results :
+
+Tests in error:
+  ContextsApplicationTests.shouldBeFoo » IllegalState Failed to load Application...
+
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0
+
+------------------------------------------------------------------------
+BUILD FAILURE
+------------------------------------------------------------------------
+Total time: 20.174s
+Finished at: Tue Oct 20 16:06:25 BST 2015
+Final Memory: 20M/312M
+------------------------------------------------------------------------
+Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.17:test (default-test) on project contexts: There are test failures.
+
+Please refer to /home/pcampbell/NetBeansProjects/contexts/target/surefire-reports for the individual test results.
+-> [Help 1]
+
+To see the full stack trace of the errors, re-run Maven with the -e switch.
+Re-run Maven using the -X switch to enable full debug logging.
+
+For more information about the errors and possible solutions, please read the following articles:
+[Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
