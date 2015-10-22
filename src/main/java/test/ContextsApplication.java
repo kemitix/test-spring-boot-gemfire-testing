@@ -26,7 +26,9 @@ public class ContextsApplication {
 
     @Bean
     CacheFactoryBean cacheFactoryBean() {
-        return new CacheFactoryBean();
+        final CacheFactoryBean cacheFactoryBean = new CacheFactoryBean();
+        cacheFactoryBean.setUseBeanFactoryLocator(false);
+        return cacheFactoryBean;
     }
 
     @Bean
